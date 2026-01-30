@@ -1,1 +1,0 @@
-This line is resolved after merge conflict

@@ -1,2 +1,14 @@
 Hello this is my second file 
 I love CP
+
+Here is the C code i wrote 
+
+#include <stdio.h>
+
+int main(){
+	int n = 4;
+	for(int i=0;i<n;i++){
+		printf("Aap, yaha aa jae\n");
+	}
+	return 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena - Battle</title>
+    <link rel="stylesheet" href="/static/game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="info">Connecting to server...</div>
+        <div id="turn-info"></div>
+        <div id="board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <div id="result"></div>
+        <button id="back-btn" style="display: none;" onclick="returnToLobby()">Return to Lobby</button>
+    </div>
+    <script>
+        const uid = "{{ uid }}";
+        const roomId = "{{ room_id }}";
+    </script>
+    <script src="/static/game.js"></script>
+</body>
+</html>

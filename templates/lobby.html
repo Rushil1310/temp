@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena - Lobby</title>
+    <link rel="stylesheet" href="/static/lobby.css">
+</head>
+<body>
+    <button class="leaderboard-button" onclick="goToLeaderboard()">Leaderboard</button>
+    <div class="container">
+        <h1>Match Lobby</h1>
+        <div id="players"></div>
+        <div id="status"></div>
+        <a href="/logout" id="logout-btn">Disconnect</a>
+    </div>
+
+    <div id="modal" style="display:none">
+        <p id="modal-msg"></p>
+        <button onclick="respond(true)">Accept</button>
+        <button onclick="respond(false)">Decline</button>
+    </div>
+    <script>
+        const uid = "{{ uid }}";
+    </script>
+    <script src="/static/lobby.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1>Leaderboard</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>ELO</th>
+  </tr>
+  {% for p in players %}
+  <tr>
+    <td>{{ p.name }}</td>
+    <td>{{ p.elo_rating }}</td>
+  </tr>
+  {% endfor %}
+</table>

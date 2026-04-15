@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #0b0c10;
+    --neon-cyan: #00f3ff;
+    --neon-pink: #ff00ea;
+    --text-color: #c5c6c7;
+    --panel-bg: rgba(17, 17, 17, 0.85);
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: 
+        radial-gradient(circle at center, #1a1a2e 0%, #000 100%),
+        linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 30px 30px, 30px 30px;
+}
+.container {
+    background: var(--panel-bg);
+    border: 2px solid var(--neon-cyan);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--neon-cyan), inset 0 0 10px var(--neon-cyan);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+h1 {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 15px var(--neon-cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+p { margin-bottom: 10px; font-size: 0.9rem; }
+input {
+    background: transparent;
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-cyan);
+    padding: 10px 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 5px var(--neon-pink) inset, 0 0 10px var(--neon-pink);
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 5px var(--neon-cyan) inset, 0 0 15px var(--neon-cyan);
+}
+button {
+    background: transparent;
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-pink);
+    padding: 10px 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--neon-pink) inset, 0 0 10px var(--neon-pink);
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+button:hover {
+    background: var(--neon-pink);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--neon-pink) inset, 0 0 30px var(--neon-pink);
+}
